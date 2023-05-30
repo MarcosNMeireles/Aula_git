@@ -1,0 +1,275 @@
+$ git init
+// inicializar o git
+$ git status
+//verificar o status do git
+$ git add meu_documento.txt
+//adicionar o arquivo criado ao git
+$ git config --local user.name "Marcos Meireles"
+c//configurando o usuário
+$ git config user.name
+//verificando o usuario
+$ git config --local user.email "meuemail@gmail.com"
+//configurando o e-mail do usuário
+$ git status
+//verificando o status
+$ git config user.email
+//verificando o e-mail
+$ git add meu_documento
+//adiciona somente o arquivo específico 
+$ git add .
+//adicionar todos os arquivos
+$ git commit -m "criando meu documento"
+//consolidando as alterações
+$ git log
+// verificando o log do commit
+$ git log --oneline
+// verificando o log do commit em uma linha
+$ git add .
+$ git commit -m "criando o gitignore para documentos importantes"
+$ git log
+$ git remote add  'C:/Users/Aluno Noite/Documents/git_java_noturno/servidor/'
+//criando servidor
+$ git remote 'C:/Users/Aluno Noite/Documents/git_java_noturno/servidor/'
+//verificando o servidor
+$ git remote add servidor_local 'C:/Users/Aluno Noite/Documents/git_java_noturno/servidor/'
+$ git remote
+$ git push servidor_local master
+// empurrando os arquivos para o servidor
+
+
+$ git init
+
+// comando de inicializar o git
+
+
+$ git status
+
+//comando para verificar o status do git
+
+
+$ git add meu_documento.txt
+
+//comando para adicionar o arquivo criado ao git
+
+
+$ git config --local user.name "José Luiz"
+
+//comando para configurar o usuário
+
+
+$ git config user.name
+
+//comando para verificar o usuario
+
+
+$ git config --local user.email "jl@gmail.com"
+
+//comando para configurar o e-mail do usuário
+
+
+$ git status
+
+//comando para verificar o status
+
+
+$ git config user.email
+
+//comando para verificando o e-mail
+
+
+$ git add nome_do_ meu_documento
+
+//comando para adicionar somente o arquivo específico 
+
+
+$ git add .
+
+//comando para adicionar todos os arquivos
+
+
+$ git commit -m "criando meu documento"
+
+//comando para salvar as alterações
+
+
+$ git log
+
+// comando para verificar o log do commit
+
+
+$ git log --oneline
+
+// comando para verificar o log do commit em uma linha
+
+
+$ git commit -m "criando o gitignore para documentos importantes"
+
+// comando para comentar os arquivos
+
+
+$ git log
+
+//comando para verificar se arquivos estão consolidados
+
+
+$ git init –bare
+
+//comando para criar e mostrar o servidor, na pasta do SERVIDOR
+
+
+$ git remote add servidor_local 'C:/Users/Aluno Noite/Documents/git_java_noturno/servidor/'
+
+//comando para adicionar servidor com nome servidor_local
+
+
+$git remote
+
+// confirmar a criação do servidor
+
+
+ $ git push servidor_local master
+
+// empurrando os arquivos para o servidor
+
+
+$git clone  'C:/Users/Aluno Noite/Documents/git_java_noturno/servidor/'
+
+// comando para clonar um servidor
+
+
+cd servidor
+
+// mudando de de past.a 
+
+
+$git pull origin master
+
+//comando para pegar as alterações feitas no arquivo local
+
+
+$ git remote 'C:/Users/Aluno Noite/Documents/git_java_noturno/servidor/'
+
+//comando para verificar se o servidor foi criado
+
+
+$ git remote add servidor_local 'C:/Users/Aluno Noite/Documents/git_java_noturno/servidor/'
+
+//comando para enviar os arquivos para o servidor.
+
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github
+$ git clone https://github.com/joseluizs/aula_git.git .
+Cloning into '.'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ cd github
+bash: cd: github: No such file or directory
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ code .
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ git add .
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ git config --local user.name "Luiz"
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ git config --local user.email "jl@gmail.com"
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ git remote
+origin
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ git commit -m "meu commit desse projeto"
+[main b695f0a] meu commit desse projeto
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ git log
+commit b695f0ae55b3e0aeb792383da50d8ed7f65c4eef (HEAD -> main)
+Author: Luiz <jl@gmail.com>
+Date:   Wed May 3 21:20:38 2023 -0300
+
+    meu commit desse projeto
+
+commit 3262e3e9bf86e5b4408ccca6e10278ae0e1594f4 (origin/main, origin/HEAD)
+Author: José Luiz <36302287+joseluizs@users.noreply.github.com>
+Date:   Wed May 3 21:01:21 2023 -0300
+
+    Initial commit
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 289 bytes | 289.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/joseluizs/aula_git.git
+   3262e3e..b695f0a  main -> main
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ git branch novo_ramo
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ git branch
+* main
+  novo_ramo
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ git branch -M ramo_2
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (ramo_2)
+$ git checkout novo_ramo
+Switched to branch 'novo_ramo'
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (novo_ramo)
+$ git add .
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (novo_ramo)
+$ git commit -m "primeiro comit na branch novo"
+[novo_ramo ea9c528] primeiro comit na branch novo
+ 1 file changed, 4 insertions(+)
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (novo_ramo)
+$ git checkout main
+Switched to a new branch 'main'
+branch 'main' set up to track 'origin/main'.
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ git merge novo_ramo
+Updating b695f0a..ea9c528
+Fast-forward
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Aluno Noite@Lab206_19 MINGW64 ~/Documents/github (main)
+$
